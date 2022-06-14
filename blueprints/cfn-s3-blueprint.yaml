@@ -12,4 +12,4 @@ grains:
         cloud-account: aws
         compute-service: cfn
         region: us-east-1
-        role-arn: arn:aws:iam::799617105972:role/DannyK_S3_CreateBucket_Role_6
+        role-arn: arn:aws:iam::053430572724:role/torque-sls6yls___1211720f8967___us-east-1
