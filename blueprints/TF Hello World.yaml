@@ -1,0 +1,17 @@
+spec_version: 2-preview
+description: "dannyk aws s3 cfn blueprint"
+
+grains:
+  Terraform Hello World:
+    kind: terraform
+    spec: 
+    spec:
+      source:
+        path: github.com/LeeorV/aws-workshop-torque.git//terraform/hello-world
+      host:
+        name: eks-leeor
+      inputs:
+        - my_name: Leeor
+      outputs:
+        - message
+        - url
