@@ -1,5 +1,5 @@
-spec_version: 2-preview
-description: "dannyk aws s3 cfn blueprint"
+spec_version: 2
+description: Leeor TF Blueprint "Hello World"
 
 inputs:
   my_name:
