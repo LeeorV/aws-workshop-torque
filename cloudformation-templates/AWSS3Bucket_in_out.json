@@ -28,7 +28,7 @@
 			"Type": "AWS::S3::Bucket",
 			"Properties": {
 				"AccessControl" : { "Ref" : "AccessControl" },
-				"BucketName" :	{ "Ref" : "BucketName" },
+				"BucketName" :	{ "Ref" : "BucketName" }
 			}
 		}
 	}
