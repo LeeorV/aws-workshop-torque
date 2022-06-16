@@ -11,7 +11,7 @@ inputs:
    bucket_name:
        type: string
        display-style: normal
-       default: "MyBucket"
+       default: "my-bucket"
 
 outputs:
    arn:
