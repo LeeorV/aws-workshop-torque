@@ -1,5 +1,5 @@
 spec_version: 2-preview
-description: "AWS S3 Bucket deployment via CloudFormation with Inputs and Outputs"
+description: "aws s3 cfn blueprint input output"
 
 inputs:
    # The access_control property is case-sensitive and must be one of the following values: 
@@ -11,7 +11,7 @@ inputs:
    bucket_name:
        type: string
        display-style: normal
-       default: "PublicRead"
+       default: "MyBucket"
 
 outputs:
    arn:
@@ -30,9 +30,10 @@ grains:
         cloud-account: aws
         compute-service: cfn
         region: us-east-1
-        role-arn: arn:aws:iam::799617105972:role/DannyK_S3_CreateBucket_Role_6
+        role-arn: arn:aws:iam::053430572724:role/torque-sls6yls___1211720f8967___us-east-1
       inputs:
-        - accesscontrol: '{{ .inputs.access_control }}'
+        - AccessControl: '{{ .inputs.access_control }}'
+        - BucketName: '{{ .inputs.bucket_name }}'
       outputs:
          - Arn
          - DomainName
