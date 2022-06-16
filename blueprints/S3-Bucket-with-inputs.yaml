@@ -1,5 +1,5 @@
 spec_version: 2-preview
-description: "aws s3 cfn blueprint input output"
+description: "S3 Bucket creation with Input and Output parameters"
 
 inputs:
    # The access_control property is case-sensitive and must be one of the following values: 
