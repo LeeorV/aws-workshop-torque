@@ -11,7 +11,7 @@ inputs:
    bucket_name:
        type: string
        display-style: normal
-       default: "my-bucket"
+       default: "my-bucket-test"
 
 outputs:
    arn:
@@ -33,7 +33,7 @@ grains:
         role-arn: arn:aws:iam::053430572724:role/torque-sls6yls___1211720f8967___us-east-1
       inputs:
         - AccessControl: '{{ .inputs.access_control }}'
-        - BucketName: '{{ .inputs.bucket_name }}'
+        - BucketName: '{{ .inputs.bucket_name }}-{{ sandboxid | downcase }}'
       outputs:
          - Arn
          - DomainName
