@@ -25,7 +25,7 @@ grains:
     spec: 
       source:
         # store: autogen_repo_sandbox_3416a76b
-        path: https://quali-dannyk-storage.s3.amazonaws.com/AWSS3Bucket_in_out.json
+        path: https://raw.githubusercontent.com/LeeorV/aws-workshop-torque/master/cloudformation-templates/AWSS3Bucket_in_out.json
       host:
         cloud-account: aws
         compute-service: cfn
