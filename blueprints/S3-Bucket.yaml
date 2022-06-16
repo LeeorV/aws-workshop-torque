@@ -7,7 +7,7 @@ grains:
     spec: 
       source:
         # store: autogen_repo_sandbox_3416a76b
-        path: https://raw.githubusercontent.com/LeeorV/aws-workshop-torque/master/cloudformation-templates/AWSS3BucketSimple.json
+        path: https://quali-dannyk-storage.s3.amazonaws.com/AWSS3Bucket.json
       host:
         cloud-account: aws
         compute-service: cfn
